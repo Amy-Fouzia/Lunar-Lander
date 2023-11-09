@@ -1,0 +1,16 @@
+﻿  main.cpp
+C:\Users\amyho\source\repos\Pong\Test\Entity.h(78,29): warning C4305: '=': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\amyho\source\repos\Pong\Test\Entity.h(82,28): warning C4305: '=': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\amyho\source\repos\Pong\Test\Entity.h(94,55): warning C4244: 'return': conversion from 'const float' to 'const int', possible loss of data
+C:\Users\amyho\source\repos\Pong\Test\Entity.h(95,55): warning C4244: 'return': conversion from 'const float' to 'const int', possible loss of data
+C:\Users\amyho\source\repos\Pong\Test\main.cpp(260,55): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\amyho\source\repos\Pong\Test\main.cpp(264,55): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Test.vcxproj -> C:\Users\amyho\source\repos\Pong\Debug\Test.exe
