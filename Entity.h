@@ -98,7 +98,7 @@ public:
     void const set_position(glm::vec3 new_position)         { m_position = new_position; };
     void const set_velocity(glm::vec3 new_velocity)         { m_velocity = new_velocity; };
     void const set_acceleration(glm::vec3 new_position)     { m_acceleration = new_position; };
-    void const set_acceleration_x(float new_x)              { m_acceleration.x = new_x; };
+    void const sub_acceleration_x(float sub_x)              { m_acceleration.x = m_acceleration.x - sub_x; };
     void const set_movement(glm::vec3 new_movement)         { m_movement = new_movement; };
     void const set_speed(float new_speed)                   { m_speed = new_speed; };
     void const set_width(float new_width)                   { m_width = new_width; };

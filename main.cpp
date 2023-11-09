@@ -257,11 +257,17 @@ void update()
     //if not moving, slowly make horizontal acceleration 0 again
     for (int i = 9; i >= 0; i--) {
         if (g_game_state.player->get_acceleration()[0] > 0) {
-            g_game_state.player->set_acceleration_x(i * 0.01);
+            g_game_state.player->sub_acceleration_x(0.01 * delta_time);
+            if (g_game_state.player->get_acceleration()[0] < 0) {
+                g_game_state.player->set_acceleration(glm::vec3(0.0f, ACC_OF_GRAVITY * 0.1, 0.0f));
+            }
         }
 
         if (g_game_state.player->get_acceleration()[0] < 0) {
-            g_game_state.player->set_acceleration_x(i * -0.01);
+            g_game_state.player->sub_acceleration_x(-0.01 * delta_time);
+            if (g_game_state.player->get_acceleration()[0] > 0) {
+                g_game_state.player->set_acceleration(glm::vec3(0.0f, ACC_OF_GRAVITY * 0.1, 0.0f));
+            }
         }
     }
 
